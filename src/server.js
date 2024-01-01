@@ -3,7 +3,6 @@ const cookieParser = require("cookie-parser");
 const cors = require("cors");
 const app = express();
 const connectDB = require("../config/ConnectDB.js");
-const corsOptions = require("../config/corsOptions.js");
 require("dotenv").config();
 
 connectDB();
@@ -13,7 +12,7 @@ app.use(
     origin: [
       "http://localhost:5173",
       process.env.FRONT_END_URL,
-      "https://netflix-client-v5qd.onrender.com",
+      "https://movieapp-7pvq.onrender.com"
     ],
     credentials: true,
   })
