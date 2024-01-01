@@ -65,10 +65,10 @@ const register = async (req, res) => {
     );
 
     res.cookie("jwt", refreshToken, {
-      httpOnly: true, //accessible only by web server
-      secure: true, //https
-      sameSite: "None", //cross-site cookie
-      maxAge: 7 * 24 * 60 * 60 * 1000, //cookie expiry: set to match rT
+//      httpOnly: true, //accessible only by web server
+//      secure: true, 
+//      sameSite: "None", //cross-site cookie
+//      maxAge: 7 * 24 * 60 * 60 * 1000, //cookie expiry: set to match rT
     });
     return res
       .status(201)
@@ -140,10 +140,10 @@ const login = async (req, res) => {
     );
 
     res.cookie("jwt", refreshToken, {
-      httpOnly: true,
-      secure: true,
-      sameSite: "None",
-      maxAge: 7 * 24 * 60 * 60 * 1000,
+      // httpOnly: true,
+      // secure: true,
+      // sameSite: "None",
+      // maxAge: 7 * 24 * 60 * 60 * 1000,
     });
 
     return res.status(200).json({
@@ -202,9 +202,9 @@ const logout = async (req, res) => {
     }
 
     res.clearCookie("jwt", {
-      httpOnly: true,
-      secure: true,
-      sameSite: "None",
+    //  httpOnly: true,
+    //  secure: true,
+    //  sameSite: "None",
     });
 
     return res.status(200).json({message: "Cookies Cleared Successfully."});
