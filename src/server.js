@@ -30,6 +30,6 @@ app.use("/movies", require("../Routes/moviesRoute.js"));
 app.use("/users", require("../Routes/usersRoute.js"));
 app.use("/auth", require("../Routes/authRoutes.js"));
 
-app.listen(process.env.PORT, () => {
+app.listen(process.env.PORT || 5000, () => {
   console.log("SERVER START");
 });
