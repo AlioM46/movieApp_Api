@@ -1,7 +1,6 @@
-const axios = require("axios");
 const MoviesModel = require("../models/MoviesModel.js");
 const UsersModel = require("../models/UsersModel.js");
-const GENRE_IDS = require("../../MovieApp/src/config/GENRE_IDS.json");
+// const GENRE_IDS = require("../../MovieApp/src/config/GENRE_IDS.json");
 const UserModel = require("../models/UsersModel.js");
 
 // #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=
